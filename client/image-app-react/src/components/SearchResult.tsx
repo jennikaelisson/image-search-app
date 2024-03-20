@@ -10,7 +10,7 @@ export const SearchResult = ({ images }: ISearchResultProps) => {
 
   const handleSave = async (image: IImage) => {
     try {
-      const response = await fetch("http://localhost:3002/favorites", {
+      const response = await fetch("http://localhost:3000/favorites", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

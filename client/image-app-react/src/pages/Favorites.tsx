@@ -14,7 +14,7 @@ export const Favorites = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3002/favorites/${user?.sub}`,
+          `http://localhost:3000/favorites/${user?.sub}`,
           {
             method: "GET",
             headers: {
