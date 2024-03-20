@@ -27,7 +27,7 @@ The project provides a convenient way for users to search for and save images wi
 7. Start the application:
 
    -  Run the client:
-      cd ../client
+      cd ../client/image-app-react
       npm run dev
 
    -  Run the server:
