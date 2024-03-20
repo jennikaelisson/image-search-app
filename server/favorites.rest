@@ -1,0 +1,13 @@
+GET http://localhost:3002/favorites
+
+###
+GET http://localhost:3002/favorites/google-oauth2|113512357034311089175
+
+###
+POST http://localhost:3002/favorites
+Content-type: application/json
+
+{
+    "userEmail": "lwgjelw@e",
+    "imageUrls": [{ "imageUrl": "https://static.wikia.nocookie.net/mylittleponytales/images/b/bb/Bonbon.jpg/revision/latest/thumbnail/width/360/height/360?cb=20110801015230", "imageTitle": "title"}]
+}
