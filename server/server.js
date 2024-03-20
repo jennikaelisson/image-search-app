@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3002;
+const port = 3000;
 const cors = require("cors");
 const fs = require("fs").promises;
 const { saveSchema } = require("./schemas/favorites.schema") 
