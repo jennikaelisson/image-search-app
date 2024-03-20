@@ -1,3 +1,3 @@
 export const Loading = () => {
-    return <>Loading...</>
-}
+  return <>Loading...</>;
+};

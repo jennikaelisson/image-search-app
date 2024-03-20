@@ -5,5 +5,5 @@ import { ISpelling } from "./ISpelling";
 export interface IPresentation {
   items: IImage[];
   searchInformation: ISearchTime;
-  spelling: ISpelling; 
+  spelling: ISpelling;
 }

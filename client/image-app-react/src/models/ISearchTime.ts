@@ -1,3 +1,3 @@
 export interface ISearchTime {
-    searchTime: number
+  searchTime: number;
 }

@@ -11,7 +11,9 @@ export const Navigation = () => {
         <li>
           <NavLink to={"/favorites"}>Favorites</NavLink>
         </li>
-        <li><LogoutButton /></li>
+        <li>
+          <LogoutButton />
+        </li>
       </ul>
     </nav>
   );

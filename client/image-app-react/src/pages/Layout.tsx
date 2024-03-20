@@ -6,29 +6,29 @@ import LoginButton from "../components/LoginButton";
 import { LoginStart } from "../components/LoginStart";
 
 export const Layout = () => {
-    const { isAuthenticated, isLoading } = useAuth0();
+  const { isAuthenticated, isLoading } = useAuth0();
 
-    if (isLoading) {
-        return <Loading />;
-      }
+  if (isLoading) {
+    return <Loading />;
+  }
   return (
-    <>     {isAuthenticated ? (<>
-      <Navigation />
-      <header className="row">
-      headedr 
-        </header>
-      <main className="row">
-        <Outlet />
-      </main>
-      <footer className="row">
-      footer
-      </footer>
+    <>
+      {" "}
+      {isAuthenticated ? (
+        <>
+          <Navigation />
+          <header className="row">headedr</header>
+          <main className="row">
+            <Outlet />
+          </main>
+          <footer className="row">footer</footer>
         </>
-       ) : ( <>
-        <LoginStart />
-        <LoginButton />
-      </>
-    )}
+      ) : (
+        <>
+          <LoginStart />
+          <LoginButton />
+        </>
+      )}
     </>
   );
 };

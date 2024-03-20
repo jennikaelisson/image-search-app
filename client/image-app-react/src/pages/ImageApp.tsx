@@ -39,14 +39,17 @@ export const ImageApp = () => {
   };
 
   return (
-        <>
-          <section>
-            <h2>Image Search</h2>
-            <SearchForm search={searchImages} searchTimer={searchTimer} spelling={spelling} />
-            {loading && <Loading />}
-            <SearchResult images={images} />
-          </section>
-                  </>
+    <>
+      <section>
+        <h2>Image Search</h2>
+        <SearchForm
+          search={searchImages}
+          searchTimer={searchTimer}
+          spelling={spelling}
+        />
+        {loading && <Loading />}
+        <SearchResult images={images} />
+      </section>
+    </>
   );
-}
-
+};
