@@ -1,13 +1,13 @@
 import { useState } from "react";
-import "./App.css";
+import "../App.css";
 import axios from "axios";
-import { IImage } from "./models/IImage";
-import { IImagePresentationWithSearchInfo } from "./models/IImagePresent";
-import { SearchForm } from "./components/SearchForm";
-import { SearchResult } from "./components/SearchResult";
-import { ISearchTime } from "./models/ISearchTime";
-import { ISpelling } from "./models/ISpelling";
-import { Loading } from "./components/Loading";
+import { IImage } from "../models/IImage";
+import { SearchForm } from "../components/SearchForm";
+import { SearchResult } from "../components/SearchResult";
+import { ISearchTime } from "../models/ISearchTime";
+import { ISpelling } from "../models/ISpelling";
+import { Loading } from "../components/Loading";
+import { IPresentation } from "../models/IPresentation";
 
 export const ImageApp = () => {
   const [images, setImages] = useState<IImage[] | undefined>([]);
@@ -20,7 +20,7 @@ export const ImageApp = () => {
   const searchImages = async (searchText: string) => {
     setLoading(true);
     try {
-      const response = await axios.get<IImagePresentationWithSearchInfo>(
+      const response = await axios.get<IPresentation>(
         `https://www.googleapis.com/customsearch/v1?key=${
           import.meta.env.VITE_GOOGLE_API_KEY
         }&cx=${
