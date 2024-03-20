@@ -1,8 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-// import LoginButton from "./components/LoginButton";
-// import LogoutButton from "./components/LogoutButton";
-// import { useAuth0 } from "@auth0/auth0-react";
 import axios from "axios";
 import { IImage } from "./models/IImage";
 import { IImagePresentationWithSearchInfo } from "./models/IImagePresent";

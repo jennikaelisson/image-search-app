@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.width img {
+  max-width: 100dvh;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  text-decoration: underline; 
+}
