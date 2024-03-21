@@ -82,8 +82,10 @@ The project provides a convenient way for users to search for and save images wi
 
 Go to the client side and in the root, create a new file and name it '.env'. Add your keys into the file as follow:
 
+VITE_AUTH0_CLIENT_ID=[your_auth0_client_id]
+
 VITE_GOOGLE_API_KEY=[your_google_API_key]
-VITE_GOOGLE_SEARCH_ENGINE_ID=[your_google_search_engine_ID]
+VITE_GOOGLE_SEARCH_ENGINE_ID=[your_google_search_engine_id]
    
 ## Usage
 
