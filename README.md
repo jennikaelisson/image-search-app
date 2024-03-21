@@ -48,7 +48,7 @@ The project provides a convenient way for users to search for and save images wi
    
 4. Go to Settings and save Domain key and ClientId key.
    
-5. Scroll down and enter in your url (ie http://localhost:5174/) in the following:
+5. Scroll down and enter in your url (ie http://localhost:5173/) in the following:
  
   - Allowed Callback URLs
       
